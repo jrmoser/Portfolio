@@ -7,24 +7,16 @@ body {
 }
 
 header {
+	height: 40%;
+	color: #006ba9;
+
 }
 
 header > div {
 	display: flex;
 	justify-content: space-around;
 	min-width: 320px;
-}
-.info {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-
-}
-
-.languages {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	height: 40%;
 }
 
 footer {
@@ -50,7 +42,16 @@ footer > div {
 }
 
 .info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 
+}
+
+.languages {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .navigation {
