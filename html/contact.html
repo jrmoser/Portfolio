@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Jarod Moser</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta charset="UTF-8">
+	<title>Contact Jarod Moser</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 <form action="../php/email.php" method="post">
-    <label><input type="text" id="firstName" name="firstName" placeholder="First Name"></label>
-    <br><br>
-    <label><input type="text" id="lastName" name="lastName" placeholder="Last Name"></label>
-    <br><br>
-    <label><input type="text" id="email" name="email" placeholder="Email"></label>
-    <br><br>
-    <label><input type="number" id="phone" placeholder="Telephone"></label>
-    <br><br>
-    <textarea id="message" name="message" cols="50" rows="10" placeholder="Message"></textarea>
-    <br><br>
-    <input type="submit">
+	<label><input
+			type="text"
+			name="firstName"
+			placeholder="First Name"
+			required></label>
+	<br><br>
+	<label><input
+			type="text"
+			name="lastName"
+			placeholder="Last Name"
+			required></label>
+	<br><br>
+	<label><input
+			type="email"
+			name="email"
+			placeholder="Email"
+			required></label>
+	<br><br>
+	<label><input
+			type="tel"
+			placeholder="Telephone"
+			pattern="\(?[0-9]{3}[.) \-]*[0-9]{3}[ .\-]?[0-9]{4}"
+			required></label>
+	<br><br>
+    <textarea
+		    name="message"
+		    cols="50"
+		    rows="10"
+		    placeholder="Message"
+		    required></textarea>
+	<br><br>
+	<input type="submit">
+	<input type="reset">
 </form>
 
 

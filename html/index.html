@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jarod Moser - Portfolio Project</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<meta charset="UTF-8">
+	<title>Jarod Moser - Portfolio Project</title>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
 
-<img src="../image/profile.jpg" alt="Very Handsome Profile Picture" >
+<header>
 
-<div class="header">
-    <h1 class="name">Jarod Moser</h1>
+	<img id="Profile" src="../image/profile.jpg" alt="Very Handsome Profile Picture">
 
-    <h2 class="contact">(208) 403-7369</h2>
-<!-- the following h2 has a javasript section that opens in a new window that is smaller -->
-    <h2 class="contact"><a href="contact.html" onclick="window.open('contact.html', 'newwindow', 'width=400, height=400, left=300, top=300, location=no'); return false;">jarodmoser@gmail.com</a></h2>
-</div>
+	<div>
+
+		<div class="info">
+
+			<h1 class="name">Jarod Moser</h1>
+
+			<h1 class="name">Front-End Web developer</h1>
+
+			<h2 class="contact">(208) 403-7369</h2>
+			<!-- the following h2 has a javasript section that opens in a new window that is smaller -->
+			<h2 class="contact"><a href="contact.html"
+			                       onclick="window.open(
+                           'contact.html',
+                           'newwindow',
+                           'width=400, height=400, left=300, top=300, location=no');
+                            return false;">jarodmoser@gmail.com</a></h2>
+		</div>
+		<div class="languages">
+			<h3>HTML</h3>
+
+			<h3>CSS</h3>
+
+			<h3>PHP</h3>
+
+			<h3>AngularJS</h3>
+
+			<h3>Node.JS</h3>
+		</div>
+	</div>
+</header>
 
 <div class="navigation">
-    <ul>
-        <li class="list-title">Web Development Projects:
-            <ul>
-                <li class="list-element">First project</li>
-                <li class="list-element">Second project</li>
-                <li class="list-element">Third project</li>
-            </ul>
-        </li>
-        <li class="list-title">Interactive Resume:
-            <ul>
-                <li class="list-element">This will become my resume page</li>
-            </ul>
-        </li>
-        <li class="list-title"><a href="biography.html">Personal Biography</a>
-            <ul>
-                <li class="social-media"><a href="https://www.facebook.com/jarod.moser" target="_blank">Facebook</a>
-                </li>
-                <li class="social-media"><a href="https://www.linkedin.com/pub/jarod-moser/a6/889/a60
-" target="_blank">Linkedin</a></li>
-            </ul>
-        </li>
-    </ul>
+	<ul>
+		<li class="list-title">Web Development Projects:
+			<ul>
+				<li class="list-element">First project</li>
+				<li class="list-element">Second project</li>
+				<li class="list-element">Third project</li>
+			</ul>
+		</li>
+		<li class="list-title">Interactive Resume:
+			<ul>
+				<li class="list-element">This will become my resume page</li>
+			</ul>
+		</li>
+	</ul>
 </div>
+
+<footer>
+	<div>
+		<h4><a href="biography.html">Biography</a></h4>
+		<h4><a href="https://www.facebook.com/jarod.moser" target="_blank">Facebook</a></h4>
+		<h4><a href="https://www.linkedin.com/pub/jarod-moser/a6/889/a60" target="_blank">Linkedin</a></h4>
+	</div>
+</footer>
 
 </body>
 </html>
