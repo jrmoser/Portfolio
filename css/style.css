@@ -9,7 +9,7 @@ body {
 header {
 	height: 40%;
 	color: #006ba9;
-	overflow: auto; /* Allows header to be sized dynamically */
+	overflow: hidden; /* Allows header to be sized dynamically */
 
 }
 
@@ -32,6 +32,7 @@ footer > div {
 	display: flex;
 	justify-content: space-around;
 	opacity: 1;
+	text-align: center;
 }
 
 #Profile {
@@ -85,5 +86,18 @@ img {
 
 .album {
 	width: 50%;
+
+}
+
+.bio {
+	flex-grow: 3;
+}
+
+.social {
+	flex-grow: 1;
+}
+
+footer a:hover {
+	background-color: #0189D8;
 
 }
