@@ -7,9 +7,11 @@ body {
 }
 
 header {
-	height: 40%;
+	height: 100vh;
 	color: #006ba9;
 	overflow: hidden; /* Allows header to be sized dynamically */
+	background-color: rgba(227, 231, 228, 0.9);
+
 
 }
 
@@ -31,7 +33,6 @@ footer {
 footer > div {
 	display: flex;
 	justify-content: space-around;
-	opacity: 1;
 	text-align: center;
 }
 
@@ -44,7 +45,7 @@ footer > div {
 }
 
 img {
-	width: 200px;
+	width: 33%;
 
 }
 
