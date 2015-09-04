@@ -43,10 +43,6 @@ footer > div {
 
 }
 
-main {
-
-}
-
 img {
 	width: 200px;
 
@@ -63,10 +59,6 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-}
-
-.navigation {
-
 }
 
 .title {
@@ -97,7 +89,12 @@ img {
 	flex-grow: 1;
 }
 
+footer a, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: #254B6D;
+}
+
 footer a:hover {
-	background-color: #0189D8;
+	background-color: #80d199;
 
 }
