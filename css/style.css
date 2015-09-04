@@ -6,20 +6,94 @@ body {
 
 }
 
-header {
-	height: 100vh;
+/*header styling*/
+.header {
+	height: 50vh;
 	color: #006ba9;
 	overflow: hidden; /* Allows header to be sized dynamically */
 	background-color: rgba(227, 231, 228, 0.9);
 
-
 }
 
-header > div {
+.header > div {
 	display: flex;
 	justify-content: space-around;
 	min-width: 320px;
-	height: 40%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+.languages {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.profile {
+	float: left;
+	width: 25%;
+	min-height: 251px;
+	min-width: 166px;
+
+}
+
+/*smaller header style*/
+.header.smaller {
+	height: 100px;
+	width: 100%;
+	position: fixed;
+}
+
+.header.smaller .profile {
+	width: 10%;
+	min-height: inherit;
+	min-width: inherit;
+}
+
+.header.smaller > div {
+	display: flex;
+	width: 90%;
+	height: inherit;
+}
+
+.header.smaller .info {
+	width: inherit;
+	height: inherit;
+	display: flex;
+	flex-direction: row;
+}
+
+.header.smaller h1, .header.smaller h2 {
+	width: 20%;
+	font-size: 15px;
+	padding-top: 20px;
+}
+.header.smaller .languages {
+	display: none;
+}
+
+/*Footer styling*/
+.bio {
+	flex-grow: 3;
+}
+
+.social {
+	flex-grow: 1;
+}
+
+footer a, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: #254B6D;
+}
+
+footer a:hover {
+	background-color: #80d199;
+
 }
 
 footer {
@@ -36,30 +110,10 @@ footer > div {
 	text-align: center;
 }
 
-#Profile {
-	float: left;
-	width: 25%;
-	min-height: 251px;
-	min-width: 166px;
 
-}
-
+/*rest of the styles*/
 img {
-	width: 33%;
-
-}
-
-.info {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-
-}
-
-.languages {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	width: 32%;
 }
 
 .title {
@@ -79,23 +133,5 @@ img {
 
 .album {
 	width: 50%;
-
-}
-
-.bio {
-	flex-grow: 3;
-}
-
-.social {
-	flex-grow: 1;
-}
-
-footer a, a:visited, a:hover, a:active {
-	text-decoration: none;
-	color: #254B6D;
-}
-
-footer a:hover {
-	background-color: #80d199;
 
 }
