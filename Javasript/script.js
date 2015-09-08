@@ -4,10 +4,11 @@
 $(function() {
 	$(window).scroll(function() {
 
-		if ($(window).scrollTop() >= 100) {
+		if ($(window).scrollTop() >= 200) {
 			$(".header").addClass('smaller');
 		} else {
 			$(".header").removeClass("smaller");
 		}
 	});
 });
+
