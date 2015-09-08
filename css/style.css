@@ -52,7 +52,7 @@ body {
 
 /*smaller header style*/
 .header.smaller {
-	height: 100px;
+	height: 20%;
 	width: 100%;
 	position: fixed;
 }
@@ -61,23 +61,24 @@ body {
 	width: 10%;
 	min-height: inherit;
 	min-width: inherit;
-	transition: 2s;
-	max-width: 100px;
-
+	transition: 0.5s;
 }
 
 .header.smaller > div {
 	display: flex;
 	width: 90%;
 	height: inherit;
+	float: right;
+	align-items: center;
+	transition: 0s;
 
 }
 
 .header.smaller .info {
 	width: inherit;
 	height: inherit;
-	display: flex;
 	flex-direction: row;
+	align-content: center;
 	transition: 0.5s;
 
 }
@@ -116,7 +117,7 @@ footer h1 {
 	z-index: -1;
 	color: #254B6D;
 	word-spacing: 20px;
-	padding-top: 10px;
+	padding-top: 15px;
 
 }
 
