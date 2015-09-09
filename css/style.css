@@ -1,8 +1,15 @@
 
 body {
-	background-image: url("../image/greyArgyle.jpg");
-	background-attachment: scroll;
-	background-size: 100% 100%;
+	/*background-image: url("../image/greyArgyle.jpg");*/
+	/*background-attachment: scroll;*/
+	/*background-size: 100% 100%;*/
+
+	background: linear-gradient(
+			rgba(40, 100, 105, 0.51),
+			rgba(40, 100, 105, 0.51)
+	),
+	url("http://www.bigorangedrink.com/sites/default/files/tessellation.jpg");
+	background-size: 300px;
 
 }
 
@@ -13,7 +20,7 @@ body {
 	height: 70vh;
 	color: #006ba9;
 	overflow: hidden; /* Allows header to be sized dynamically */
-	background-color: rgba(227, 231, 228, 0.9);
+	background-color: rgba(227, 231, 228, 0.8);
 	transition: 0.5s;
 
 }
@@ -79,7 +86,7 @@ body {
 	height: inherit;
 	flex-direction: row;
 	align-content: center;
-	transition: 0.5s;
+	transition: 0.2s;
 
 }
 
@@ -170,8 +177,22 @@ footer > div {
 }
 
 /*rest of the styles*/
-img {
-	width: 32%;
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.projects {
+	display: flex;
+	margin-bottom: 5vh;
+	width: 32vw;
+	height: 40vh;
+	overflow: visible;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .title {
