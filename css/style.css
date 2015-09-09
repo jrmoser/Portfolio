@@ -92,7 +92,7 @@ body {
 
 .header.smaller h1, .header.smaller h2 {
 	width: 20%;
-	font-size: 20px;
+	font-size: 3vh;
 	margin: 0;
 	padding-top: 20px;
 	transition: .5s;
@@ -176,16 +176,17 @@ footer > div {
 
 }
 
-/*rest of the styles*/
+/*main content styles*/
 
 main {
 	display: flex;
 	flex-wrap: wrap;
-	align-content: space-between;
+	align-content: space-around;
 }
 
 .projects {
 	display: flex;
+	justify-content: space-around;
 	margin-bottom: 5vh;
 	width: 32vw;
 	height: 40vh;
@@ -193,20 +194,49 @@ main {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	transition: 1s;
 }
 
-.title {
-	font-size: 40px;
+.projects-menu {
+	display: flex;
+	justify-content: space-around;
+	opacity: 0;
+
+}
+/* TODO: fix spacing on columns in projects-menu*/
+.column1, .column2 {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: space-around;
+	flex: 1;
+	text-align: center;
+}
+
+p {
+	font-size: 3.5vh;
+	color: #254B6D;
+
 
 }
 
-.list-title {
-	font-size: x-large;
+.projects-menu:hover {
+	opacity: 1;
+	background-color: rgba(227, 231, 228, 0.8);
+	transition: 1s;
 
 }
 
-.list-element {
-	font-size: large;
+
+main a:hover {
+	opacity: 1;
+
+}
+
+main a, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: #254B6D;
+	transition: .5s;
 
 }
 
