@@ -1,9 +1,5 @@
 
 body {
-	/*background-image: url("../image/greyArgyle.jpg");*/
-	/*background-attachment: scroll;*/
-	/*background-size: 100% 100%;*/
-
 	background: linear-gradient(
 			rgba(40, 100, 105, 0.51),
 			rgba(40, 100, 105, 0.51)
@@ -62,6 +58,7 @@ body {
 	height: 20%;
 	width: 100%;
 	position: fixed;
+	z-index: 99;
 }
 
 .header.smaller .profile {
@@ -86,6 +83,7 @@ body {
 	height: inherit;
 	flex-direction: row;
 	align-content: center;
+	z-index: 99;
 	transition: 0.2s;
 
 }
@@ -181,14 +179,15 @@ footer > div {
 main {
 	display: flex;
 	flex-wrap: wrap;
-	align-content: space-around;
+	align-content: space-between;
 }
 
 .projects {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-content: space-between;
 	margin-bottom: 5vh;
-	width: 32vw;
+	width: 32.88vw;
 	height: 40vh;
 	overflow: visible;
 	background-size: contain;
@@ -200,20 +199,27 @@ main {
 .projects-menu {
 	display: flex;
 	justify-content: space-around;
+	align-content: space-between;
 	opacity: 0;
+	width: inherit;
+	height: inherit;
+	transition: 1s;
 
 }
-/* TODO: fix spacing on columns in projects-menu*/
+
 .column1, .column2 {
 	display: flex;
 	flex-direction: column;
 	align-content: space-around;
-	justify-content: space-around;
+	justify-content: space-between;
+	height: inherit;
 	flex: 1;
 	text-align: center;
 }
 
 p {
+	padding-top: 10px;
+	height: 100%;
 	font-size: 3.5vh;
 	color: #254B6D;
 
@@ -230,6 +236,8 @@ p {
 
 main a:hover {
 	opacity: 1;
+	background-color: #80d199;
+	transition: .5s;
 
 }
 
@@ -238,6 +246,11 @@ main a, a:visited, a:hover, a:active {
 	color: #254B6D;
 	transition: .5s;
 
+}
+
+main a {
+	flex-grow: 1;
+	flex-basis: 0;
 }
 
 .album {
